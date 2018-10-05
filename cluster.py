@@ -24,8 +24,8 @@ from sklearn import metrics
 from sklearn import datasets
 from sklearn.cluster import KMeans
 
-out = open('clustering_result.txt','w')
-vectores = pd.read_csv('C:/Users/JULIANJAR/Documents/python/PPP_wv2.csv',encoding='utf-8')  ## LECTURA DEL ARCHIVO CON LOS DATOS A TRABAJAR
+out = open('clustering_result2.txt','w')
+vectores = pd.read_csv('C:/Users/JulianJar92/Documents/GitHub/GEODESYC_VECTOR_CLUSTER/DATA_IN.csv',encoding='utf-8')  ## LECTURA DEL ARCHIVO CON LOS DATOS A TRABAJAR
 
 data = vectores[['Longitud','Latitud','Evel','Nvel','Uvel','Magnitud','Direccion']]         ## EXTRACCION DE DATOS DEL DATAFRAME VECTORES A LA VARIABLE evel
 names = vectores['Estacion']
